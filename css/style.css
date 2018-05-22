@@ -1,0 +1,81 @@
+@font-face {
+  font-family: Big Noodle Titling;
+  src: url("https://cdn.rawgit.com/foolofsoul/overwatch-character-match/master/fonts/big_noodle_titling.ttf");
+}
+
+@font-face {
+  font-family: Big Noodle Titling Oblique;
+  src: url("https://cdn.rawgit.com/foolofsoul/overwatch-character-match/master/fonts/big_noodle_titling_oblique.ttf");
+}
+body {
+  background:#1C021F;
+  box-sizing:border-box;
+  /*background-image:url("https://upload.wikimedia.org/wikipedia/commons/6/6f/SombraASCIISkull.svg");
+    background-repeat:repeat-x;
+  background-size:contain;*/
+}
+
+.main {
+  max-width: 1000px;
+  padding-top:15px;
+  margin: 150px auto;
+    background:#1C021F;
+  background-image: url("http://i67.tinypic.com/10gy685.png");
+  background-repeat:no-repeat;
+  background-size: contain;
+  background-position:-20px -20px;
+}
+
+
+button {
+  font-family: Big Noodle Titling Oblique;
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  display:block;
+  margin: 0 auto;
+  height: 250px;
+  width: 250px;
+  font-size: 60px;
+  color: #C57AD5;
+  background-color: #3D1345 ;
+  border:5px solid #C57AD5;
+  text-shadow: 2px 2px 3px black;
+}
+button:active {
+    box-shadow: inset 1px 1px 8px black;
+}
+
+#text {
+   font-family: Big Noodle Titling Oblique;
+  color: #C57AD5;
+  text-align:center;
+  font-size: 50px;
+  text-shadow: 3px 3px 3px black;
+  margin:15px auto;
+  height:50px;
+  padding-bottom: 10px;
+}
+
+@media (max-width:630px) {
+  body {
+    background-image:none;
+  }
+  .main {
+    padding-top: 40px;
+    margin: 0 auto;
+    background-position: top center;
+    background-size:contain;
+
+  }
+  button{
+    margin-top: 150px;
+    height: 200px;
+    width: 200px;
+    font-size: 40px;
+  }
+  #text {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+}
