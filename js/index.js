@@ -115,5 +115,12 @@ function playSound() {
       text = "I can be nice.";
       break;
   }
-document.getElementById("text").innerHTML = '"' + text + '"';
+  document.getElementById("text").classList.remove("ani");
+// offsetWidth triggers reflow
+void document.getElementById("text").offsetWidth;
+document.getElementById("text").classList.add("ani");
+document.getElementById("text").innerText = '"' + text + '"';
+  
+
+
 }
